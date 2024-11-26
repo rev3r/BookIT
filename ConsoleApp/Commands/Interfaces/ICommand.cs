@@ -1,0 +1,2 @@
+﻿namespace ConsoleApp;
+interface ICommand;
