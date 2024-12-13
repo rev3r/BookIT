@@ -12,7 +12,7 @@ class Runner(
     {
         try
         {
-            if (TryCreateArgs(out var args) is false)
+            if (TryCreateArgs(out _) is false)
                 return Task.CompletedTask;
 
             while (token.IsCancellationRequested is false)

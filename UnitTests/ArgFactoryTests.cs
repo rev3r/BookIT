@@ -119,7 +119,7 @@ public class ArgFactoryTests
     class FakeFile : IFile
     {
         private readonly string _realPath = Guid.NewGuid() + ".json";
-        private string? _file = null!;
+        private string? _file = null;
         private bool _exists = true;
         private bool _shouldReadThrow = false;
 
@@ -150,7 +150,7 @@ public class ArgFactoryTests
                 throw new Exception();
 
             var content = _file is not null
-                ? Encoding.UTF8.GetBytes(_file!)
+                ? Encoding.UTF8.GetBytes(_file)
                 : [];
 
             var stream = File.Create(_realPath);

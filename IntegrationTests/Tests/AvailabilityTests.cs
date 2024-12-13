@@ -147,7 +147,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{2 + 3}");
+        Console.AssertOutput("2");
     }
 
     [Fact]
@@ -163,7 +163,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{1 + 2 + 2}");
+        Console.AssertOutput("1");
     }
 
     [Fact]
@@ -179,7 +179,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{1 + 1}");
+        Console.AssertOutput("1");
     }
 
     [Fact]
@@ -195,7 +195,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{2 + 2}");
+        Console.AssertOutput("2");
     }
 
     [Fact]
@@ -211,7 +211,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{1 + 1 + 1}");
+        Console.AssertOutput("1");
     }
 
     [Fact]
@@ -227,7 +227,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{2 + 2 + 1 + 2 + 2 + 2}");
+        Console.AssertOutput("1");
     }
 
     [Fact]
@@ -243,7 +243,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{2 + 2}");
+        Console.AssertOutput("2");
     }
 
     [Fact]
@@ -259,7 +259,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{2 + 1 + 1}");
+        Console.AssertOutput("1");
     }
 
     [Fact]
@@ -275,7 +275,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{1 + 2 + 2}");
+        Console.AssertOutput("1");
     }
 
     [Fact]
@@ -307,7 +307,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{-2 + -2}");
+        Console.AssertOutput("-2");
     }
 
     [Fact]
@@ -323,7 +323,7 @@ public class AvailabilityTests : TestBase
         await RunAsync();
 
         // Assert
-        Console.AssertOutput($"{2 + 2 + 2 + 1 + 1}");
+        Console.AssertOutput("1");
     }
 
     #endregion

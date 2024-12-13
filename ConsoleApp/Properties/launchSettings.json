@@ -2,11 +2,11 @@
   "profiles": {
     "ConsoleApp": {
       "commandName": "Project",
-      "commandLineArgs": ""
+      "commandLineArgs": "--bookings ExampleFiles/bookings.json --hotels ExampleFiles/hotels.json"
     },
     "Docker": {
       "commandName": "Docker",
-      "commandLineArgs": ""
+      "commandLineArgs": "--bookings ExampleFiles/bookings.json --hotels ExampleFiles/hotels.json"
     }
   }
 }

@@ -14,13 +14,13 @@ class AvailabilityCommandHandler(QueryingAlgorithm algorithm)
         var assignmentsPerDay = algorithm.GetAssignmentsPerDay(
             command.HotelId, command.RoomType, from, to);
 
-        var assignmentsCount = 0;
+        var maxAssignments = 0;
         for (var date = from; date <= to; date = date.AddDays(1))
         {
-            assignmentsCount += assignmentsPerDay.GetValueOrDefault(date);
+            var assignments = assignmentsPerDay.GetValueOrDefault(date);
+            maxAssignments = Math.Max(maxAssignments, assignments);
         }
 
-        var daysCount = to.DayNumber - from.DayNumber + 1;
-        return new AvailabilityResult((daysCount * roomCount) - assignmentsCount);
+        return new AvailabilityResult(roomCount - maxAssignments);
     }
 }
